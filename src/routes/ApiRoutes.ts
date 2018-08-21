@@ -20,7 +20,12 @@ const tickers = new Tickers()
 const collectibles = new Collectibles()
 
 // Serve docmentation
-router.use("/docs", express.static(path.join(__dirname, "/../../apidoc")))
+// router.use("/docs", express.static(path.join(__dirname, "/src/Documents/help.html")))
+// router.get("/docs", express.static(path.join(__dirname, "/src/Documents/help.html")))
+router.get("/doc", function(req, res){
+    res.send('Admin Homepage');
+    // res.sendfile(__dirname + '/help.html')
+})
 
 router.get("/dapps/main", dAppsController.main);
 router.get("/dapps/category/:id", dAppsController.byCategoryID);

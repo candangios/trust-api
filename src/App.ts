@@ -68,6 +68,9 @@ export class App {
 
     private addRoutes() {
         this.app.use("/", router);
+        this.app.use("/dpc",function(req,res){
+            res.send('Admin Homepage');
+        })
     }
 
     private launch() {
