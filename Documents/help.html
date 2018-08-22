@@ -1,0 +1,656 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<title>help</title>
+
+
+<style type="text/css">
+body {
+  font-family: Helvetica, arial, sans-serif;
+  font-size: 14px;
+  line-height: 1.6;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: white;
+  padding: 30px; }
+
+body > *:first-child {
+  margin-top: 0 !important; }
+body > *:last-child {
+  margin-bottom: 0 !important; }
+
+a {
+  color: #4183C4; }
+a.absent {
+  color: #cc0000; }
+a.anchor {
+  display: block;
+  padding-left: 30px;
+  margin-left: -30px;
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0; }
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 20px 0 10px;
+  padding: 0;
+  font-weight: bold;
+  -webkit-font-smoothing: antialiased;
+  cursor: text;
+  position: relative; }
+
+h1:hover a.anchor, h2:hover a.anchor, h3:hover a.anchor, h4:hover a.anchor, h5:hover a.anchor, h6:hover a.anchor {
+  background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA09pVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMy1jMDExIDY2LjE0NTY2MSwgMjAxMi8wMi8wNi0xNDo1NjoyNyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNiAoMTMuMCAyMDEyMDMwNS5tLjQxNSAyMDEyLzAzLzA1OjIxOjAwOjAwKSAgKE1hY2ludG9zaCkiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6OUM2NjlDQjI4ODBGMTFFMTg1ODlEODNERDJBRjUwQTQiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6OUM2NjlDQjM4ODBGMTFFMTg1ODlEODNERDJBRjUwQTQiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDo5QzY2OUNCMDg4MEYxMUUxODU4OUQ4M0REMkFGNTBBNCIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDo5QzY2OUNCMTg4MEYxMUUxODU4OUQ4M0REMkFGNTBBNCIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/PsQhXeAAAABfSURBVHjaYvz//z8DJYCRUgMYQAbAMBQIAvEqkBQWXI6sHqwHiwG70TTBxGaiWwjCTGgOUgJiF1J8wMRAIUA34B4Q76HUBelAfJYSA0CuMIEaRP8wGIkGMA54bgQIMACAmkXJi0hKJQAAAABJRU5ErkJggg==) no-repeat 10px center;
+  text-decoration: none; }
+
+h1 tt, h1 code {
+  font-size: inherit; }
+
+h2 tt, h2 code {
+  font-size: inherit; }
+
+h3 tt, h3 code {
+  font-size: inherit; }
+
+h4 tt, h4 code {
+  font-size: inherit; }
+
+h5 tt, h5 code {
+  font-size: inherit; }
+
+h6 tt, h6 code {
+  font-size: inherit; }
+
+h1 {
+  font-size: 28px;
+  color: black; }
+
+h2 {
+  font-size: 24px;
+  border-bottom: 1px solid #cccccc;
+  color: black; }
+
+h3 {
+  font-size: 18px; }
+
+h4 {
+  font-size: 16px; }
+
+h5 {
+  font-size: 14px; }
+
+h6 {
+  color: #777777;
+  font-size: 14px; }
+
+p, blockquote, ul, ol, dl, li, table, pre {
+  margin: 15px 0; }
+
+hr {
+  background: transparent url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAYAAAAECAYAAACtBE5DAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyJpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNSBNYWNpbnRvc2giIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6OENDRjNBN0E2NTZBMTFFMEI3QjRBODM4NzJDMjlGNDgiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6OENDRjNBN0I2NTZBMTFFMEI3QjRBODM4NzJDMjlGNDgiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDo4Q0NGM0E3ODY1NkExMUUwQjdCNEE4Mzg3MkMyOUY0OCIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDo4Q0NGM0E3OTY1NkExMUUwQjdCNEE4Mzg3MkMyOUY0OCIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/PqqezsUAAAAfSURBVHjaYmRABcYwBiM2QSA4y4hNEKYDQxAEAAIMAHNGAzhkPOlYAAAAAElFTkSuQmCC) repeat-x 0 0;
+  border: 0 none;
+  color: #cccccc;
+  height: 4px;
+  padding: 0;
+}
+
+body > h2:first-child {
+  margin-top: 0;
+  padding-top: 0; }
+body > h1:first-child {
+  margin-top: 0;
+  padding-top: 0; }
+  body > h1:first-child + h2 {
+    margin-top: 0;
+    padding-top: 0; }
+body > h3:first-child, body > h4:first-child, body > h5:first-child, body > h6:first-child {
+  margin-top: 0;
+  padding-top: 0; }
+
+a:first-child h1, a:first-child h2, a:first-child h3, a:first-child h4, a:first-child h5, a:first-child h6 {
+  margin-top: 0;
+  padding-top: 0; }
+
+h1 p, h2 p, h3 p, h4 p, h5 p, h6 p {
+  margin-top: 0; }
+
+li p.first {
+  display: inline-block; }
+li {
+  margin: 0; }
+ul, ol {
+  padding-left: 30px; }
+
+ul :first-child, ol :first-child {
+  margin-top: 0; }
+
+dl {
+  padding: 0; }
+  dl dt {
+    font-size: 14px;
+    font-weight: bold;
+    font-style: italic;
+    padding: 0;
+    margin: 15px 0 5px; }
+    dl dt:first-child {
+      padding: 0; }
+    dl dt > :first-child {
+      margin-top: 0; }
+    dl dt > :last-child {
+      margin-bottom: 0; }
+  dl dd {
+    margin: 0 0 15px;
+    padding: 0 15px; }
+    dl dd > :first-child {
+      margin-top: 0; }
+    dl dd > :last-child {
+      margin-bottom: 0; }
+
+blockquote {
+  border-left: 4px solid #dddddd;
+  padding: 0 15px;
+  color: #777777; }
+  blockquote > :first-child {
+    margin-top: 0; }
+  blockquote > :last-child {
+    margin-bottom: 0; }
+
+table {
+  padding: 0;border-collapse: collapse; }
+  table tr {
+    border-top: 1px solid #cccccc;
+    background-color: white;
+    margin: 0;
+    padding: 0; }
+    table tr:nth-child(2n) {
+      background-color: #f8f8f8; }
+    table tr th {
+      font-weight: bold;
+      border: 1px solid #cccccc;
+      margin: 0;
+      padding: 6px 13px; }
+    table tr td {
+      border: 1px solid #cccccc;
+      margin: 0;
+      padding: 6px 13px; }
+    table tr th :first-child, table tr td :first-child {
+      margin-top: 0; }
+    table tr th :last-child, table tr td :last-child {
+      margin-bottom: 0; }
+
+img {
+  max-width: 100%; }
+
+span.frame {
+  display: block;
+  overflow: hidden; }
+  span.frame > span {
+    border: 1px solid #dddddd;
+    display: block;
+    float: left;
+    overflow: hidden;
+    margin: 13px 0 0;
+    padding: 7px;
+    width: auto; }
+  span.frame span img {
+    display: block;
+    float: left; }
+  span.frame span span {
+    clear: both;
+    color: #333333;
+    display: block;
+    padding: 5px 0 0; }
+span.align-center {
+  display: block;
+  overflow: hidden;
+  clear: both; }
+  span.align-center > span {
+    display: block;
+    overflow: hidden;
+    margin: 13px auto 0;
+    text-align: center; }
+  span.align-center span img {
+    margin: 0 auto;
+    text-align: center; }
+span.align-right {
+  display: block;
+  overflow: hidden;
+  clear: both; }
+  span.align-right > span {
+    display: block;
+    overflow: hidden;
+    margin: 13px 0 0;
+    text-align: right; }
+  span.align-right span img {
+    margin: 0;
+    text-align: right; }
+span.float-left {
+  display: block;
+  margin-right: 13px;
+  overflow: hidden;
+  float: left; }
+  span.float-left span {
+    margin: 13px 0 0; }
+span.float-right {
+  display: block;
+  margin-left: 13px;
+  overflow: hidden;
+  float: right; }
+  span.float-right > span {
+    display: block;
+    overflow: hidden;
+    margin: 13px auto 0;
+    text-align: right; }
+
+code, tt {
+  margin: 0 2px;
+  padding: 0 5px;
+  white-space: nowrap;
+  border: 1px solid #eaeaea;
+  background-color: #f8f8f8;
+  border-radius: 3px; }
+
+pre code {
+  margin: 0;
+  padding: 0;
+  white-space: pre;
+  border: none;
+  background: transparent; }
+
+.highlight pre {
+  background-color: #f8f8f8;
+  border: 1px solid #cccccc;
+  font-size: 13px;
+  line-height: 19px;
+  overflow: auto;
+  padding: 6px 10px;
+  border-radius: 3px; }
+
+pre {
+  background-color: #f8f8f8;
+  border: 1px solid #cccccc;
+  font-size: 13px;
+  line-height: 19px;
+  overflow: auto;
+  padding: 6px 10px;
+  border-radius: 3px; }
+  pre code, pre tt {
+    background-color: transparent;
+    border: none; }
+
+sup {
+    font-size: 0.83em;
+    vertical-align: super;
+    line-height: 0;
+}
+
+kbd {
+  display: inline-block;
+  padding: 3px 5px;
+  font-size: 11px;
+  line-height: 10px;
+  color: #555;
+  vertical-align: middle;
+  background-color: #fcfcfc;
+  border: solid 1px #ccc;
+  border-bottom-color: #bbb;
+  border-radius: 3px;
+  box-shadow: inset 0 -1px 0 #bbb
+}
+
+* {
+	-webkit-print-color-adjust: exact;
+}
+@media screen and (min-width: 914px) {
+    body {
+        width: 854px;
+        margin:0 auto;
+    }
+}
+@media print {
+	table, pre {
+		page-break-inside: avoid;
+	}
+	pre {
+		word-wrap: break-word;
+	}
+}
+</style>
+
+
+</head>
+
+<body>
+
+<h1 id="toc_0">TomoAPI</h1>
+
+<p>Tomo API is service connect </p>
+
+<h2 id="toc_1">Features</h2>
+
+<ul>
+<li>Get list tokens ERC20 from address.</li>
+<li>Get price coin or ERC20 tokens from CoinmacketCap</li>
+<li>Get history transaction frome trust ray(other server connected RPCServer)<br></li>
+</ul>
+
+<p>BaseURL: http://45.117.82.104:8003</p>
+
+<h2 id="toc_2">List tokens ERC20 from an Address</h2>
+
+<p>List all tokens erc20 from address</p>
+
+<ul>
+<li>@api {post} /tokens</li>
+<li>@apiVersion 0.1.0</li>
+<li>@apiName GetTokens</li>
+<li>@apiGroup Tokens</li>
+<li>@apiPermission none
+*</li>
+<li>@apiSampleRequest off
+*</li>
+<li>@apiParam (Request body) {String[]} networkIndex Array of addresses as a string</li>
+<li>@apiParam (Request body) {String[]} address Address</li>
+</ul>
+
+<h3 id="toc_3">Request:</h3>
+
+<div><pre><code class="language-none">POST : http://45.117.82.104:8003/tokens</code></pre></div>
+
+<h3 id="toc_4">Header:</h3>
+
+<div><pre><code class="language-none">Content-Type: application/json</code></pre></div>
+
+<h3 id="toc_5">Param (Request body) raw :</h3>
+
+<div><pre><code class="language-none">   {
+     &quot;60&quot;: [&quot;0xac4df82fe37ea2187bc8c011a23d743b4f39019a&quot;]
+   }</code></pre></div>
+
+<h3 id="toc_6">SuccessExample {json} Sucess-Response:</h3>
+
+<div><pre><code class="language-none">HtTPS 200 OK</code></pre></div>
+
+<div><pre><code class="language-none">   {
+   &quot;docs&quot;: [
+        {
+           &quot;balance&quot;: &quot;0&quot;,
+            &quot;contract&quot;: {
+                &quot;contract&quot;: &quot;0xf4eced2f682ce333f96f2d8966c613ded8fc95dd&quot;,
+               &quot;address&quot;: &quot;0xf4eced2f682ce333f96f2d8966c613ded8fc95dd&quot;,
+                &quot;name&quot;: &quot;MistCoin&quot;,
+                 &quot;decimals&quot;: 2,
+                &quot;symbol&quot;: &quot;MC&quot;,
+                &quot;coin&quot;: 60,
+                &quot;type&quot;: &quot;ERC20&quot;
+            }
+        },
+        {
+           &quot;balance&quot;: &quot;0&quot;,
+            &quot;contract&quot;: {
+                &quot;contract&quot;: &quot;0x3111c94b9243a8a99d5a867e00609900e437e2c0&quot;,
+               &quot;address&quot;: &quot;0x3111c94b9243a8a99d5a867e00609900e437e2c0&quot;,
+                &quot;name&quot;: &quot;TEST&quot;,
+               &quot;decimals&quot;: 18,
+                &quot;symbol&quot;: &quot;TEST&quot;,
+                &quot;coin&quot;: 178,
+                &quot;type&quot;: &quot;ERC20&quot;
+            }
+         }
+    ]
+  }</code></pre></div>
+
+<h2 id="toc_7">Get Prices</h2>
+
+<ul>
+<li>@api {post} /prices</li>
+<li>@apiVersion 0.1.0</li>
+<li>@apiName GetTokenPrices</li>
+<li>@apiGroup Tokens</li>
+<li>@apiPermission none</li>
+<li>@apiExample {curl} Example usage</li>
+<li>curl -X POST -S -H &#39;Content-Type: application/json&#39; -d &#39;{&quot;currency&quot;:&quot;USD&quot;,&quot;tokens&quot;:[{&quot;contract&quot;:&quot;0x1d462414fe14cf489c7a21cac78509f4bf8cd7c0&quot;,&quot;symbol&quot;:&quot;CAN&quot;}]}&#39;</li>
+<li>@apiParam {String} currency=&quot;USD&quot; For valid fiat currency values refer to <a href="https://coinmarketcap.com/api/">https://coinmarketcap.com/api/</a> . Price updates every 5 minutes.</li>
+<li>@apiParam {Object[]} tokens Token object</li>
+<li>@apiParam {String} tokens.contract Smart contract address</li>
+<li>@apiParam {String} tokens.symbol Smart contract symbol</li>
+</ul>
+
+<h3 id="toc_8">Request:</h3>
+
+<div><pre><code class="language-none">POST : http://45.117.82.104:8003/price</code></pre></div>
+
+<h3 id="toc_9">Header:</h3>
+
+<div><pre><code class="language-none">Content-Type: application/json</code></pre></div>
+
+<h3 id="toc_10">Param (Request body) raw :</h3>
+
+<div><pre><code class="language-none">   {
+        &quot;currency&quot;: &quot;USD&quot;,
+        &quot;tokens&quot;: [
+           {
+               &quot;contract&quot;: &quot;0x1a0f2ab46ec630f9fd638029027b552afa64b94c&quot;,
+               &quot;symbol&quot;: &quot;PIE&quot;
+           }
+        ]
+   }</code></pre></div>
+
+<h3 id="toc_11">SuccessExample {json} Sucess-Response:</h3>
+
+<div><pre><code class="language-none">HtTPS 200 OK</code></pre></div>
+
+<div><pre><code class="language-none">   {
+    &quot;status&quot;: true,
+    &quot;docs&quot;: [
+        {
+            &quot;id&quot;: &quot;aston&quot;,
+            &quot;name&quot;: &quot;Aston&quot;,
+            &quot;symbol&quot;: &quot;PIE&quot;,
+            &quot;price&quot;: &quot;0.0389537632&quot;,
+            &quot;percent_change_24h&quot;: &quot;7.3&quot;,
+            &quot;contract&quot;: &quot;0x1a0f2ab46ec630f9fd638029027b552afa64b94c&quot;,
+            &quot;image&quot;: &quot;https://raw.githubusercontent.com/TrustWallet/tokens/master/images/0x1a0f2ab46ec630f9fd638029027b552afa64b94c.png&quot;
+        }
+    ]
+}</code></pre></div>
+
+<h2 id="toc_12">Get Tokens List ERC20</h2>
+
+<ul>
+<li>@api {get} /tokens/list</li>
+<li>@apiVersion 0.1.0</li>
+<li>@apiName GetTokensList</li>
+<li>@apiGroup Tokens</li>
+<li>@apiPermission none</li>
+<li>* @apiParam {String} query Query to match condition</li>
+<li>@apiParam {String} networks Comma delimited list of coin index <a href="https://github.com/satoshilabs/slips/blob/master/slip-0044.md">https://github.com/satoshilabs/slips/blob/master/slip-0044.md</a> </li>
+<li>@apiParam {Boolean=true,false} [verified=true] Return only verified (meaning listed on https://coinmarketcap.com/) ERC20 contracts. If specified <code>false</code> will return both verified and not verified contracts.
+*</li>
+</ul>
+
+<h3 id="toc_13">Request:</h3>
+
+<div><pre><code class="language-none">GET : http://45.117.82.104:8003/tokens/list?query=TRX&amp;networks=60</code></pre></div>
+
+<h3 id="toc_14">SuccessExample {json} Sucess-Response:</h3>
+
+<div><pre><code class="language-none">HtTPS 200 OK</code></pre></div>
+
+<div><pre><code class="language-none">{
+    &quot;docs&quot;: [
+        {
+            &quot;verified&quot;: true,
+            &quot;enabled&quot;: true,
+            &quot;_id&quot;: &quot;5aa590051125720640037236&quot;,
+            &quot;address&quot;: &quot;0xf230b790e05390fc8295f4d3f60332c93bed42e2&quot;,
+            &quot;symbol&quot;: &quot;TRX&quot;,
+            &quot;decimals&quot;: 6,
+            &quot;totalSupply&quot;: &quot;100000000000000000&quot;,
+            &quot;name&quot;: &quot;Tronix&quot;,
+            &quot;coin&quot;: 60,
+            &quot;type&quot;: &quot;ERC20&quot;
+        }
+    ]
+}</code></pre></div>
+
+<h2 id="toc_15">Get Tickers</h2>
+
+<ul>
+<li>@api {get} /tickers
+*</li>
+<li>@apiVersion 0.1.0</li>
+<li>@apiName GetTickers</li>
+<li>@apiGroup Market</li>
+<li>@apiPermission none
+*</li>
+<li>@apiParam {String=&quot;AUD&quot;, &quot;BRL&quot;, &quot;CAD&quot;, &quot;CHF&quot;, &quot;CLP&quot;, &quot;CNY&quot;, &quot;CZK&quot;, &quot;DKK&quot;, &quot;EUR&quot;, &quot;GBP&quot;, &quot;HKD&quot;, &quot;HUF&quot;, &quot;IDR&quot;, &quot;ILS&quot;, &quot;INR&quot;, &quot;JPY&quot;, &quot;KRW&quot;, &quot;MXN&quot;, &quot;MYR&quot;, &quot;NOK&quot;, &quot;NZD&quot;, &quot;PHP&quot;, &quot;PKR&quot;, &quot;PLN&quot;, &quot;RUB&quot;, &quot;SEK&quot;, &quot;SGD&quot;, &quot;THB&quot;, &quot;TRY&quot;, &quot;TWD&quot;, &quot;ZAR&quot;, &quot;USD&quot;} [currency=USD] Coin value in curreny</li>
+<li>@apiParam {String} [ids] ids Comma separated list of coin id&#39;s exp: ids=1,3,5. If ids present page<em>number or/and page</em>size will not take affect</li>
+<li>@apiParam {Number} [page_number=1] Return resutls starting from specified rank</li>
+<li>@apiParam {Number} [page_size=50] Return a maximum results</li>
+<li>@apiParam {String} [sort=rank<em>asc] TODO other sort criterias: price</em>asc, price<em>desc, market</em>cap<em>asc, market</em>cap<em>desc, rank</em>asc, volume<em>24h</em>asc, volume<em>24h</em>desc</li>
+</ul>
+
+<h3 id="toc_16">Request</h3>
+
+<div><pre><code class="language-none">GET : http://45.117.82.104:8003/tickers?currency=EUR&amp;page_number=1&amp;page_size=3</code></pre></div>
+
+<h3 id="toc_17">SuccessExample {json} Sucess-Response:</h3>
+
+<div><pre><code class="language-none">{
+    &quot;status&quot;: true,
+    &quot;currency&quot;: &quot;EUR&quot;,
+    &quot;docs&quot;: [
+        {
+            &quot;website_slug&quot;: &quot;bitcoin&quot;,
+            &quot;last_updated&quot;: 1534673141,
+            &quot;percent_change_7d&quot;: 0.92,
+            &quot;percent_change_24h&quot;: -1.97,
+            &quot;percent_change_1h&quot;: -0.08,
+            &quot;market_cap&quot;: 110195598805,
+            &quot;volume_24h&quot;: 3483718875.67363,
+            &quot;price&quot;: 6399.82356254,
+            &quot;total_supply&quot;: 17218537,
+            &quot;circulating_supply&quot;: 17218537,
+            &quot;rank&quot;: 1,
+            &quot;symbol&quot;: &quot;BTC&quot;,
+            &quot;name&quot;: &quot;Bitcoin&quot;,
+            &quot;id&quot;: 1
+        },
+        {
+            &quot;website_slug&quot;: &quot;ethereum&quot;,
+            &quot;last_updated&quot;: 1534673097,
+            &quot;percent_change_7d&quot;: -8.15,
+            &quot;percent_change_24h&quot;: -4.31,
+            &quot;percent_change_1h&quot;: -0.11,
+            &quot;market_cap&quot;: 30184177596,
+            &quot;volume_24h&quot;: 1562202981.57786,
+            &quot;price&quot;: 297.617245829,
+            &quot;total_supply&quot;: 101419451,
+            &quot;circulating_supply&quot;: 101419451,
+            &quot;rank&quot;: 2,
+            &quot;symbol&quot;: &quot;ETH&quot;,
+            &quot;name&quot;: &quot;Ethereum&quot;,
+            &quot;id&quot;: 1027
+        },
+        {
+            &quot;website_slug&quot;: &quot;ripple&quot;,
+            &quot;last_updated&quot;: 1534673121,
+            &quot;percent_change_7d&quot;: 8.98,
+            &quot;percent_change_24h&quot;: -3.32,
+            &quot;percent_change_1h&quot;: 0.2,
+            &quot;market_cap&quot;: 13118015450,
+            &quot;volume_24h&quot;: 316370166.0248,
+            &quot;price&quot;: 0.3331779528,
+            &quot;total_supply&quot;: 99991874018,
+            &quot;circulating_supply&quot;: 39372399467,
+            &quot;rank&quot;: 3,
+            &quot;symbol&quot;: &quot;XRP&quot;,
+            &quot;name&quot;: &quot;XRP&quot;,
+            &quot;id&quot;: 52
+        }
+    ]
+}</code></pre></div>
+
+<h2 id="toc_18">Get Transactions</h2>
+
+<ul>
+<li>@api {get} /:networkId/transactions</li>
+<li>@apiVersion 0.1.0</li>
+<li>@apiName GetTransactions</li>
+<li>@apiGroup Transactions</li>
+<li>@apiPermission none
+*</li>
+<li>@apiParam {Number} networkId Network id, supported networks are: ethereum, classic, poa, callisto
+*</li>
+<li>@apiParam {String} address Address</li>
+<li>@apiParam {Number} [startBlock=1] Block number to select transaction from</li>
+<li>@apiParam {Number} [endBlock=9999999999] Block number to select transaction till</li>
+<li>@apiParam {Number} [page=1] Number of page</li>
+<li>@apiParam {Number{25..50}} [limit=25] Limit transactions per page</li>
+<li>@apiParam {String} [contract] Select address transactions on specific contrac</li>
+</ul>
+
+<h3 id="toc_19">Request</h3>
+
+<div><pre><code class="language-none">GET : http://45.117.82.104:8003/ethereum/transactions?address=0x1a007089523cc763d8e7c8a2f33429b28cdae5d5
+</code></pre></div>
+
+<h3 id="toc_20">SuccessExample {json} Sucess-Response:</h3>
+
+<div><pre><code class="language-none">{
+    &quot;docs&quot;: [
+        {
+            &quot;operations&quot;: [
+                {
+                    &quot;_id&quot;: &quot;5b40dfa0354a554be0b394fb&quot;,
+                    &quot;transactionId&quot;: &quot;0x6f9af585dbf527f67bb47f3779b9e4993da24c9b0c9e46ad86bf1175aea088fe-0&quot;,
+                    &quot;contract&quot;: {
+                        &quot;verified&quot;: false,
+                        &quot;enabled&quot;: true,
+                        &quot;_id&quot;: &quot;5b364c1fc358f8001ba63113&quot;,
+                        &quot;address&quot;: &quot;0x23ccc43365d9dd3882eab88f43d515208f832430&quot;,
+                        &quot;totalSupply&quot;: &quot;500000000000000000000000000&quot;,
+                        &quot;decimals&quot;: 18,
+                        &quot;symbol&quot;: &quot;MAS&quot;,
+                        &quot;name&quot;: &quot;MidasProtocol&quot;
+                    },
+                    &quot;value&quot;: &quot;30000000000000000000000&quot;,
+                    &quot;to&quot;: &quot;0x6e7312d1028b70771bb9cdd9837442230a9349ca&quot;,
+                    &quot;from&quot;: &quot;0xb28b47e0545fa9ee79a01a705c43372ad1c1bd5d&quot;,
+                    &quot;type&quot;: &quot;token_transfer&quot;
+                }
+            ],
+            &quot;contract&quot;: null,
+            &quot;_id&quot;: &quot;0x6f9af585dbf527f67bb47f3779b9e4993da24c9b0c9e46ad86bf1175aea088fe&quot;,
+            &quot;blockNumber&quot;: 5922374,
+            &quot;timeStamp&quot;: &quot;1530978210&quot;,
+            &quot;nonce&quot;: 725,
+            &quot;from&quot;: &quot;0xb28b47e0545fa9ee79a01a705c43372ad1c1bd5d&quot;,
+            &quot;to&quot;: &quot;0x23ccc43365d9dd3882eab88f43d515208f832430&quot;,
+            &quot;value&quot;: &quot;0&quot;,
+            &quot;gas&quot;: &quot;200000&quot;,
+            &quot;gasPrice&quot;: &quot;120000000000&quot;,
+            &quot;gasUsed&quot;: &quot;53716&quot;,
+            &quot;input&quot;: &quot;0xa9059cbb0000000000000000000000006e7312d1028b70771bb9cdd9837442230a9349ca00000000000000000000000000000000000000000000065a4da25d3016c00000&quot;,
+            &quot;error&quot;: &quot;&quot;,
+            &quot;id&quot;: &quot;0x6f9af585dbf527f67bb47f3779b9e4993da24c9b0c9e46ad86bf1175aea088fe&quot;,
+            &quot;coin&quot;: 60
+        }
+     ]
+     
+  }
+</code></pre></div>
+
+
+
+
+</body>
+
+</html>

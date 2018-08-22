@@ -9,6 +9,7 @@ import { AppCheck } from "../controllers/AppCheck";
 import { TokenInfo } from "../controllers/TokenInfo";
 import { Collectibles } from "../controllers/Collectibles/CollectiblesController";
 
+
 const router = express.Router();
 
 const dAppsController = new DAppsController();
@@ -22,9 +23,9 @@ const collectibles = new Collectibles()
 // Serve docmentation
 // router.use("/docs", express.static(path.join(__dirname, "/src/Documents/help.html")))
 // router.get("/docs", express.static(path.join(__dirname, "/src/Documents/help.html")))
-router.get("/doc", function(req, res){
-    res.send('Admin Homepage');
-    // res.sendfile(__dirname + '/help.html')
+router.get("/docs",function(req, res){
+    // res.send('Admin Homepage');
+    res.sendfile(path.join(__dirname, '../../Documents/help.html'));
 })
 
 router.get("/dapps/main", dAppsController.main);
