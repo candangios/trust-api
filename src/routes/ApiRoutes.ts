@@ -25,7 +25,7 @@ const collectibles = new Collectibles()
 // router.get("/docs", express.static(path.join(__dirname, "/src/Documents/help.html")))
 router.get("/docs",function(req, res){
     // res.send('Admin Homepage');
-    res.sendfile(path.join(__dirname, '../../docs/help.html'));
+    res.sendfile(path.join(__dirname, '../../help.html'));
 })
 
 router.get("/dapps/main", dAppsController.main);
