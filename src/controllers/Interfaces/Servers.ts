@@ -1,4 +1,5 @@
 export enum Nodes {
+    rinkeby = "https://tomo-rinkeby.herokuapp.com/",
     ethereum = "https://api.trustwalletapp.com/",
     classic = "https://trust-classic.herokuapp.com/",
     poa = "https://trust-poa.herokuapp.com/",
@@ -20,6 +21,7 @@ export enum Endpoints {
 
 // https://github.com/satoshilabs/slips/blob/master/slip-0044.md
 export enum CoinTypeIndex {
+    rinkeby = 1,
     ethereum = 60,
     classic = 61,
     poa = 178,
