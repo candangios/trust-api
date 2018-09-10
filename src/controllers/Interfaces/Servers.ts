@@ -5,7 +5,8 @@ export enum Nodes {
     poa = "https://trust-poa.herokuapp.com/",
     callisto = "https://trust-callisto.herokuapp.com/",
     gochain = "https://trust-gochain.herokuapp.com/",
-    localhost = "http://localhost:8000/"
+    localhost = "http://localhost:8000/",
+    tomo = "https://tomo-trust-wallet.herokuapp.com/"
 }
 
 export enum Endpoints {
@@ -27,6 +28,7 @@ export enum CoinTypeIndex {
     poa = 178,
     callisto = 820,
     gochain = 6060,
+    tomo = 88,
     // localhost = 8000 // Uncomment for test pourpouse
 }
 
